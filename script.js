@@ -1,20 +1,59 @@
-function showTab(tabId) {
+const links = document.querySelectorAll(".tab");
 
-    // hide all sections
-    let sections = document.querySelectorAll(".content");
-    sections.forEach(section => {
-        section.classList.remove("active");
+links.forEach(link => {
+    link.addEventListener("click", function () {
+        links.forEach(l => l.classList.remove("active"));
+        this.classList.add("active");
     });
+});
 
-    // remove active tab style
-    let tabs = document.querySelectorAll(".tab");
-    tabs.forEach(tab => {
-        tab.classList.remove("active");
-    });
 
-    // show selected section
-    document.getElementById(tabId).classList.add("active");
+/* TYPING EFFECT */
 
-    // highlight clicked tab
-    event.target.classList.add("active");
+const words = [
+    "Hi, I'm",
+  "Hola, soy",
+  "Bonjour, je suis",
+  "こんにちは、私は",
+  "안녕하세요, 저는"
+];
+
+let wordIndex = 0;
+let letterIndex = 0;
+let currentWord = "";
+let isDeleting = false;
+
+const typingElement = document.querySelector(".typing");
+
+function typeEffect(){
+
+    currentWord = words[wordIndex];
+
+    if(isDeleting){
+        typingElement.textContent =
+            currentWord.substring(0, letterIndex--);
+    }
+    else{
+        typingElement.textContent =
+            currentWord.substring(0, letterIndex++);
+    }
+
+    let speed = isDeleting ? 70 : 120;
+
+    // pause after typing
+    if(!isDeleting && letterIndex === currentWord.length + 1){
+        speed = 1500;
+        isDeleting = true;
+    }
+
+    // next word
+    else if(isDeleting && letterIndex === 0){
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        speed = 300;
+    }
+
+    setTimeout(typeEffect, speed);
 }
+
+typeEffect();

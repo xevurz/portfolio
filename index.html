@@ -1,68 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabbed Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabbed Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<!-- NAV TABS -->
+<!-- NAV -->
 <nav class="tabs">
-    <button class="tab active" onclick="showTab('hero')">Hero</button>
-    <button class="tab" onclick="showTab('about')">About</button>
-    <button class="tab" onclick="showTab('projects')">Projects</button>
-    <button class="tab" onclick="showTab('contact')">Contact</button>
+    <a class="tab active" href="#hero">Hero</a>
+    <a class="tab" href="#about">About</a>
+    <a class="tab" href="#projects">Projects</a>
+    <a class="tab" href="#contact">Contact</a>
 </nav>
 
 <!-- HERO -->
-<section id="hero" class="content active">
+<section id="hero" class="content">
 
-    <div class="hero">
+<div class="hero">
 
-        <div class="hero-text">
+    <div class="hero-text">
 
-            <p class="badge">👋 Student Developer</p>
+        <p class="badge">👋 Student Developer</p>
 
-            <h1>Hello, I'm <span>Raven</span></h1>
+        <h3 class="tagline">
+            <span class="typing"></span>
+            <span class="name"> Raven</span>
+        </h3>
 
-            <h3 class="tagline">Aspiring Web Developer & UI Designer</h3>
+        <h3 class="tagline">Aspiring Web Developer & UI Designer</h3>
 
-            <p class="description">
-                I build basic, but responsive, and modern websites using HTML, CSS,
-                and JavaScript. I enjoy turning ideas into real, interactive web experiences.
-            </p>
+        <p class="description">
+            I build responsive and modern websites using HTML, CSS, and JavaScript.
+        </p>
 
-            <!-- QUICK INFO -->
-            <div class="highlights">
-                <div>💻 Newbie Developer</div>
-                <div>💪 Fitness training</div>
-                <div>🚀 Open to Learn more</div>
+        <div class="highlights">
+            <div>💻 Beginner Developer</div>
+            <div>💪 Fitness Active</div>
+            <div>🚀 Always Learning</div>
+        </div>
+
+        <div class="buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+
+        <div class="socials">
+    <a href="https://github.com/xevurz" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+
+    <a href="https://www.instagram.com/etssven" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <a href="https://www.facebook.com/raven.grande.0" target="_blank">
+        <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+</div>
+
+    </div>
+
+    <div class="hero-img">
+        <img src="profile.jpg" alt="Profile">
+    </div>
+
+</div>
+
+<!-- SKILLS -->
+<!-- SKILLS -->
+<div class="skills-container">
+
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-wrapper">
+
+        <!-- ROW 1 -->
+        <div class="skills-row row-left">
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+                <p>C++</p>
             </div>
 
-            <!-- BUTTONS -->
-            <div class="buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="#contact" class="btn secondary">Contact Me</a>
+            <div class="skill-card">
+                <img src="https://raw.githubusercontent.com/termux/termux-app/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
+                <p>Termux</p>
             </div>
 
-            <!-- SOCIALS -->
-            <div class="socials">
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Facebook</a>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+                <p>Java</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+                <p>Python</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+                <p>PHP</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+                <p>MySQL</p>
+            </div>
+
+            <!-- DUPLICATE FOR INFINITE LOOP -->
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+                <p>C++</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://raw.githubusercontent.com/termux/termux-app/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
+                <p>Termux</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+                <p>Java</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+                <p>Python</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+                <p>PHP</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+                <p>MySQL</p>
             </div>
 
         </div>
 
-        <div class="hero-img">
-            <img src="profile.jpg" alt="Profile Picture">
+        <!-- ROW 2 -->
+        <div class="skills-row row-right">
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                <p>Git</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+                <p>VS Code</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg">
+                <p>Canva</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                <p>HTML</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                <p>CSS</p>
+            </div>
+
+            <!-- DUPLICATE FOR INFINITE LOOP -->
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                <p>Git</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+                <p>VS Code</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg">
+                <p>Canva</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                <p>HTML</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                <p>CSS</p>
+            </div>
+
         </div>
 
     </div>
 
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="content">
+    <h2>About Me</h2>
+    <p>Write your about content here...</p>
 </section>
 
 <!-- PROJECTS -->
@@ -77,8 +227,7 @@
 
     <div class="card">
         <h3>Login System</h3>
-        <p>Simple authentication system with session.</p>
-        <span>PHP, MySQL</span>
+        <p>Simple authentication system.</p>
     </div>
 
     <div class="card">
