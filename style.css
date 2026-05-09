@@ -575,4 +575,49 @@ html{
     border:1px solid #38bdf8;
 }
 
+/* PERSONAL HOBBIES */
+.personal{
+    margin-top:35px;
+}
 
+.personal h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+/* GRID */
+.personal-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:15px;
+}
+
+/* CARD */
+.personal-card{
+    text-align:center;
+    padding:18px;
+
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:15px;
+
+    transition:0.3s ease;
+}
+
+.personal-card span{
+    font-size:22px;
+    display:block;
+    margin-bottom:8px;
+}
+
+.personal-card p{
+    font-size:13px;
+    color:#cbd5e1;
+}
+
+/* hover */
+.personal-card:hover{
+    transform:translateY(-6px);
+    border:1px solid #38bdf8;
+    box-shadow:0 0 20px rgba(56,189,248,0.2);
+}
