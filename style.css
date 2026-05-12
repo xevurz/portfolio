@@ -17,22 +17,86 @@ body{
 /* =======================
    NAV
 ======================= */
+/* =======================
+   NAVBAR
+======================= */
 .tabs{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    padding:20px;
-    background:#111827;
     position:sticky;
     top:0;
-    z-index:100;
+    z-index:999;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+
+    padding:18px 40px;
+
+    background:rgba(15,23,42,0.82);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,0.06);
 }
 
+/* LOGO */
+.nav-logo{
+    position:absolute;
+    left:40px;
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+/* RG CIRCLE */
+.rg-logo{
+    width:48px;
+    height:48px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    font-size:18px;
+    font-weight:800;
+    letter-spacing:1px;
+
+    color:white;
+
+    background:linear-gradient(135deg,#38bdf8,#818cf8);
+
+    box-shadow:
+    0 0 20px rgba(56,189,248,0.35),
+    0 0 40px rgba(129,140,248,0.2);
+
+    transition:0.3s ease;
+}
+
+/* hover */
+.rg-logo:hover{
+    transform:rotate(-8deg) scale(1.05);
+}
+
+/* NAME */
+.nav-logo span{
+    font-size:16px;
+    font-weight:700;
+    letter-spacing:0.5px;
+
+    background:linear-gradient(90deg,#ffffff,#cbd5e1);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* TABS */
 .tab{
     padding:10px 20px;
-    background:#1e293b;
+    border-radius:30px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
     color:white;
-    border-radius:20px;
     text-decoration:none;
     transition:0.3s;
 }
