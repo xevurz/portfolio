@@ -1266,3 +1266,148 @@ html{
 
     font-size:14px;
 }
+
+/* =======================
+   QUOTE
+======================= */
+.quote{
+    margin-top:22px;
+
+    padding:18px 22px;
+
+    border-left:3px solid #38bdf8;
+
+    background:rgba(56,189,248,0.05);
+
+    border-radius:14px;
+
+    color:#e2e8f0;
+
+    font-style:italic;
+
+    line-height:1.7;
+
+    backdrop-filter:blur(10px);
+
+    transition:0.3s ease;
+}
+
+/* hover */
+.quote:hover{
+    transform:translateX(5px);
+
+    border-left:3px solid #818cf8;
+
+    box-shadow:
+    0 0 20px rgba(56,189,248,0.12);
+}
+
+/* =======================
+   GOALS (UPGRADED)
+======================= */
+
+.goals{
+    margin-top:40px;
+}
+
+.goals-sub{
+    color:#94a3b8;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+/* GRID */
+.goals-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+}
+
+/* CARD */
+.goal-card{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+
+    padding:18px 20px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(18px);
+
+    transition:0.35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* glow effect */
+.goal-card::before{
+    content:"";
+    position:absolute;
+
+    width:120px;
+    height:120px;
+
+    background:#38bdf8;
+
+    filter:blur(60px);
+
+    opacity:0;
+
+    top:-40px;
+    right:-40px;
+
+    transition:0.4s ease;
+}
+
+/* hover glow */
+.goal-card:hover::before{
+    opacity:0.15;
+}
+
+/* hover */
+.goal-card:hover{
+    transform:translateY(-6px);
+
+    border:1px solid #38bdf8;
+
+    box-shadow:
+    0 0 25px rgba(56,189,248,0.15);
+}
+
+/* ICON */
+.goal-icon{
+    font-size:26px;
+
+    padding:10px;
+
+    border-radius:14px;
+
+    background:rgba(56,189,248,0.08);
+
+    border:1px solid rgba(56,189,248,0.2);
+}
+
+/* TITLE */
+.goal-card h4{
+    color:#ffffff;
+
+    font-size:15px;
+
+    margin-bottom:4px;
+}
+
+/* TEXT */
+.goal-card p{
+    color:#cbd5e1;
+
+    font-size:13px;
+
+    line-height:1.5;
+}
