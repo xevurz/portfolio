@@ -97,3 +97,27 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const subject = `Portfolio Message from ${name}`;
+
+    const body =
+`Name: ${name}
+Email: ${email}
+
+Message:
+${message}`;
+
+    window.location.href =
+`mailto:ravengrande0@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+});
