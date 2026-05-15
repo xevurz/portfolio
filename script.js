@@ -84,20 +84,6 @@ window.addEventListener("scroll", () => {
     });
 });
 
-const fadeElements = document.querySelectorAll(".fade-up");
-
-window.addEventListener("scroll", () => {
-
-    fadeElements.forEach(el => {
-
-        const top = el.getBoundingClientRect().top;
-
-        if(top < window.innerHeight - 100){
-            el.classList.add("show");
-        }
-    });
-});
-
 function copyEmail() {
     const email = document.getElementById("emailText").innerText;
 
@@ -110,3 +96,28 @@ function copyEmail() {
         card.classList.remove("copied");
     }, 1200);
 }
+
+// RUN ON PAGE LOAD (IMPORTANT FIX)
+window.addEventListener("load", () => {
+    fadeElements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 100) {
+            el.classList.add("show");
+        }
+    });
+});
+
+const fadeElements = document.querySelectorAll(".fade-up");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+fadeElements.forEach(el => observer.observe(el));

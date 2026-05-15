@@ -1388,6 +1388,7 @@ html{
     opacity:0;
     transform:translateY(40px);
     transition:1s ease;
+    will-change: transform, opacity;
 }
 
 .fade-up.show{
