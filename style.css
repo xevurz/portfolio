@@ -1677,170 +1677,23 @@ html{
     }
 }
 
-/* RIGHT SIDE CARD */
-.focus-card{
-    padding:40px;
-
-    border-radius:30px;
-
-    background:rgba(255,255,255,0.04);
-
-    border:1px solid rgba(255,255,255,0.08);
-
-    backdrop-filter:blur(20px);
-
-    position:relative;
-    overflow:hidden;
-}
-
-/* glow */
-.focus-card::before{
-    content:"";
-    position:absolute;
-
-    width:220px;
-    height:220px;
-
-    background:#818cf8;
-
-    filter:blur(120px);
-
-    opacity:0.12;
-
-    bottom:-100px;
-    right:-100px;
-}
-
-/* status */
-.focus-top{
-    display:flex;
-    align-items:center;
-    gap:10px;
-
-    margin-bottom:22px;
-}
-
-.status-dot{
-    width:12px;
-    height:12px;
-
-    border-radius:50%;
-
-    background:#22c55e;
-
-    box-shadow:
-    0 0 15px #22c55e;
-}
-
-.focus-top p{
-    color:#cbd5e1;
-    font-size:14px;
-}
-
-/* title */
-.focus-card h3{
-    font-size:30px;
-    margin-bottom:30px;
-}
-
-/* items */
-.focus-list{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-}
-
-.focus-item{
-    display:flex;
-    align-items:flex-start;
-    gap:16px;
-
-    padding:18px;
-
-    border-radius:18px;
-
-    background:rgba(255,255,255,0.04);
-
-    border:1px solid rgba(255,255,255,0.06);
-
-    transition:0.3s ease;
-}
-
-.focus-item:hover{
-    transform:translateX(6px);
-
-    border:1px solid #38bdf8;
-
-    box-shadow:
-    0 0 20px rgba(56,189,248,0.12);
-}
-
-.focus-item i{
-    width:50px;
-    height:50px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:16px;
-
-    background:rgba(56,189,248,0.08);
-
+/* CONTACT ICON COLORS */
+.info-card .fa-envelope{
     color:#38bdf8;
-
-    font-size:18px;
 }
 
-.focus-item h4{
-    margin-bottom:5px;
-    font-size:15px;
+.info-card .fa-github{
+    color:#ffffff;
 }
 
-.focus-item p{
-    color:#94a3b8;
-    font-size:13px;
-    line-height:1.5;
+.info-card .fa-facebook{
+    color:#1877f2;
 }
 
-/* mini stats */
-.mini-stats{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-
-    gap:15px;
-
-    margin-top:28px;
+.info-card .fa-phone{
+    color:#22c55e;
 }
 
-.mini-box{
-    padding:20px;
-
-    border-radius:18px;
-
-    background:rgba(255,255,255,0.04);
-
-    border:1px solid rgba(255,255,255,0.06);
-
-    text-align:center;
-
-    transition:0.3s ease;
-}
-
-.mini-box:hover{
-    transform:translateY(-5px);
-
-    border:1px solid #38bdf8;
-}
-
-.mini-box h4{
-    font-size:26px;
-    color:#38bdf8;
-
-    margin-bottom:5px;
-}
-
-.mini-box p{
-    color:#cbd5e1;
-    font-size:13px;
+.info-card .fa-location-dot{
+    color:#f97316;
 }

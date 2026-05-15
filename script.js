@@ -104,9 +104,9 @@ contactForm.addEventListener("submit", function(e){
 
     e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
     const subject = `Portfolio Message from ${name}`;
 
@@ -117,7 +117,9 @@ Email: ${email}
 Message:
 ${message}`;
 
-    window.location.href =
-`mailto:ravengrande0@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(
+        `mailto:ravengrande0@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+        "_blank"
+    );
 
 });
