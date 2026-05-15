@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
+
+
 <body>
 
     <!-- GLOBAL BACKGROUND -->
@@ -556,111 +559,59 @@
 </section>
 
             
-<!-- CONTACT -->
-<section id="contact" class="content">
+<section id="contact" class="content contact-container-single fade-up">
 
-    <div class="contact-container fade-up">
+  <div class="contact-header">
+    <span class="contact-badge">Get In Touch</span>
+    <h2>Let’s Work Together</h2>
+    <p class="contact-desc">
+      Feel free to reach out anytime. I’m open to projects, collaborations, or just a chat.
+    </p>
+  </div>
 
-        <div class="contact-left">
+  <div class="contact-horizontal">
 
-            <p class="contact-badge">🚀 Let's Connect</p>
-
-            <h2>
-                Ready to build something amazing together?
-            </h2>
-
-            <p class="contact-desc">
-                I'm open to collaborations, freelance opportunities,
-                creative projects, and learning experiences.
-                Whether you have an idea, a project, or just want to connect —
-                feel free to message me anytime.
-            </p>
-
-            <div class="contact-info">
-
-                <div class="info-card">
-                    <i class="fas fa-envelope"></i>
-
-                    <div>
-                        <h4>Email</h4>
-                        <p>ravengrande0@gmail.com</p>
-                    </div>
-                </div>
-
-                <div class="info-card">
-                    <i class="fab fa-github"></i>
-
-                    <div>
-                        <h4>GitHub</h4>
-                        <p>github.com/xevurz</p>
-                    </div>
-                </div>
-
-                <div class="info-card">
-                    <i class="fab fa-facebook"></i>
-
-                    <div>
-                        <h4>Facebook</h4>
-                        <p>facebook.com/raven.grande.0</p>
-                    </div>
-                </div>
-
-                <div class="info-card">
-                    <i class="fas fa-phone"></i>
-
-                    <div>
-                        <h4>Phone</h4>
-                        <p>+63 991 506 3606</p>
-                    </div>
-                </div>
-
-<div class="info-card">
-    <i class="fas fa-location-dot"></i>
-
-    <div>
-        <h4>Location</h4>
-        <p>Bacoor City, Cavite</p>
-    </div>
-</div>
-
-            </div>
-
-        </div>
-
-        <div class="contact-right">
-
-            <div class="contact-card">
-
-                <h3>Send a Message</h3>
-
-                <form id="contactForm">
-
-    <div class="input-group">
-        <input type="text" id="name" placeholder="Your Name" required>
+    <div class="contact-glass-card" onclick="copyEmail()">
+     <i class="fa-solid fa-envelope"></i>
+      <h4>Email</h4>
+      <p id="emailText">ravengrande0@gmail.com</p>
+      <span class="hint">Click to copy email</span>
     </div>
 
-    <div class="input-group">
-        <input type="email" id="email" placeholder="Your Email" required>
+    <div class="contact-glass-card">
+      <i class="fa-solid fa-phone"></i>
+      <h4>Phone</h4>
+      <p>+63 991 506 3606</p>
+      <span class="hint">Available 9AM - 9PM</span>
     </div>
 
-    <div class="input-group">
-        <textarea id="message" placeholder="Your Message" required></textarea>
+    <div class="contact-glass-card">
+      <i class="fa-solid fa-location-dot"></i>
+      <h4>Location</h4>
+      <p>Las Piñas, Philippines</p>
+      <span class="hint">Open for local & remote</span>
     </div>
 
-    <button type="submit" class="contact-btn">
-        Send Message
-    </button>
+<!-- GIT HUB (OPEN LINK) -->
+    <a href="https://github.com/xevurz" class="contact-glass-card">
+      <i class="fa-brands fa-github"></i>
+      <h4>GitHub</h4>
+      <p>View my projects</p>
+      <span class="hint">Click to visit</span>
+    </a>
 
-</form>
+<!-- FACEBOOK (OPEN LINK) -->
+<a href="https://facebook.com/raven.grande.0" target="_blank" class="contact-glass-card">
+  <i class="fa-brands fa-facebook"></i>
+  <h4>Facebook</h4>
+  <p>Raven Grande</p>
+  <span class="hint">Click to open profile</span>
+</a>
 
-            </div>
-
-        </div>
-
-    </div>
+  </div>
 
 </section>
-
+              
 <footer class="footer">
     <p>© 2026 Raven Grande • Built with HTML, CSS & JavaScript</p>
 </footer>

@@ -98,28 +98,15 @@ window.addEventListener("scroll", () => {
     });
 });
 
-const contactForm = document.getElementById("contactForm");
+function copyEmail() {
+    const email = document.getElementById("emailText").innerText;
 
-contactForm.addEventListener("submit", function(e){
+    navigator.clipboard.writeText(email);
 
-    e.preventDefault();
+    const card = document.querySelector(".contact-glass-card");
+    card.classList.add("copied");
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    const subject = `Portfolio Message from ${name}`;
-
-    const body =
-`Name: ${name}
-Email: ${email}
-
-Message:
-${message}`;
-
-    window.open(
-        `mailto:ravengrande0@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
-        "_blank"
-    );
-
-});
+    setTimeout(() => {
+        card.classList.remove("copied");
+    }, 1200);
+}
